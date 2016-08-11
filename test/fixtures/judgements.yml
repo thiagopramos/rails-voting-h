@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cat1: 1
+  cat2: 1
+  cat3: 1
+  cat4: 1
+  cat5: 1
+  contestant: one
+
+two:
+  cat1: 1
+  cat2: 1
+  cat3: 1
+  cat4: 1
+  cat5: 1
+  contestant: two

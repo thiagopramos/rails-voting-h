@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="jumbotron">
+    <h3><%= @contestant.name %></h3>
+  </div>
+ <table class="table table-striped"><tbody>
+  <% @contestant.judgements.each do |j| %>
+    <tr >
+    <td>Judge Name </td>
+    <td><%= j.cat1.to_s %></td>
+    <td><%= j.cat2.to_s %></td>
+    <td><%= j.cat3.to_s %></td>
+    <td><%= j.cat4.to_s %></td>
+    <td><%= j.cat5.to_s %></td>
+    </tr>
+  <% end %>
+  <td><%= link_to 'Add Judgement', new_contestant_judgement_path(@contestant) %></td>
+  </tbody></table>
+</div>

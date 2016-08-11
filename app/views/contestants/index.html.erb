@@ -1,0 +1,19 @@
+<div class="container">
+  <h3>List of Contestants</h3>
+
+ <table class="table table-striped"><tbody>
+  <% @contestants.each do |contestant| %>
+    <tr class="row">
+    <td class="col-sm-11"> <%= link_to contestant.name, contestant_path(contestant) %></td>
+    <td  class="col-sm-1">
+      <%= link_to edit_contestant_path(contestant) do %>
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      <% end %>
+      <%= link_to contestant_path(contestant), method:"delete" do %>
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      <% end %>
+    </td>
+    </tr>
+  <% end %>
+  </tbody></table>
+</div>
